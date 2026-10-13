@@ -1,0 +1,11 @@
+[package]
+name = "ghc-io"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+ghc-model.workspace = true
+flate2.workspace = true
+quick-xml.workspace = true
+thiserror.workspace = true

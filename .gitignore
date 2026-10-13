@@ -1,0 +1,13 @@
+/target
+**/*.rs.bk
+Cargo.lock
+# UI (Tauri/Vite) — se añadirá en Fase 5
+/ui/node_modules
+/ui/dist
+/src-tauri/target
+/.ghidra-config/
+/.ghidra-cache/
+/.ghidra-projects/
+/ghidra-projects/
+/docs/ghidra-followup.log
+/.runtime-replay/

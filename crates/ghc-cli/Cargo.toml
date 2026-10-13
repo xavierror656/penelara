@@ -1,0 +1,15 @@
+[package]
+name = "ghc-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "ghc"
+path = "src/main.rs"
+
+[dependencies]
+ghc-model.workspace = true
+ghc-io.workspace = true
+ghc-solver.workspace = true
+anyhow.workspace = true

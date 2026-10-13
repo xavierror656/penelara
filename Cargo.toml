@@ -1,0 +1,25 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ghc-model",
+    "crates/ghc-io",
+    "crates/ghc-solver",
+    "crates/ghc-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+rust-version = "1.75"
+
+[workspace.dependencies]
+ghc-model = { path = "crates/ghc-model" }
+ghc-io = { path = "crates/ghc-io" }
+ghc-solver = { path = "crates/ghc-solver" }
+serde = { version = "1.0.210", features = ["derive"] }
+quick-xml = { version = "0.36.2", features = ["serialize"] }
+flate2 = "1.0.34"
+encoding_rs = "0.8.34"
+anyhow = "1.0.89"
+thiserror = "1.0.64"
